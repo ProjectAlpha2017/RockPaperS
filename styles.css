@@ -4,13 +4,31 @@
     box-sizing: border-box;
 }
 
-.button{
-    font-size: 16px;
-    padding: 2;
-    margin-top: 10px;
-    background-color: aquamarine;
-    border-color: black;
-    border-width: 2px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
+.btn {
+    background: #ed66d2;
+    background-image: linear-gradient(to bottom, #ed66d2, #a7a4ed);
+    border-radius: 28px;
+    font-family: Arial;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .btn:hover {
+    background: #009dff;
+    text-decoration: none;
+  }
+
+  #score{
+    
+  }
+  
+  #computer{
+
+  }
+  
+  #player{
+
+  }
