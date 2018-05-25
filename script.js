@@ -1,6 +1,12 @@
 let score = 0;
 let options = ['rock', 'paper', 'scissors'];
 
+const updateDisplay = (score, player, computerPlayer) => {
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("player").innerHTML = player
+    document.getElementById("computer").innerHTML = computerPlayer
+}
+
 const buttonClick = event => {
     console.log(event); // log where clicked
     let clickedButton = event.target.id;
@@ -21,7 +27,8 @@ const buttonClick = event => {
         ) {
             console.log("WON")
             score += 5
-
+        
+        //lose events
         } else if (
             (player === 'rock' && computerPlayer === 'paper') ||
             (player === 'paper' && computerPlayer === 'scissors') ||
@@ -29,7 +36,10 @@ const buttonClick = event => {
         ) {
             console.log("lost")
             score = 2
+        } else {
+            console.log("draw")
         }
+        updateDisplay(score, player, computerPlayer);
     }
 };
 
