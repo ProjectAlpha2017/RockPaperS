@@ -14,21 +14,24 @@
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     margin-left: 10px;
-  }
-  
-  .btn:hover {
+    width: 50%;
+}
+
+.btn:hover {
     background: #009dff;
     text-decoration: none;
-  }
+}
 
-  #score{
-    
-  }
-  
-  #computer{
-
-  }
-  
-  #player{
-
-  }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+    text-align: center;
+}
+.center{
+    width: 100%;
+}
